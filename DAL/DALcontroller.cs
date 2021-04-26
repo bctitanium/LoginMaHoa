@@ -45,6 +45,11 @@ namespace DAL
             return kq;
         }
 
+        /// <summary>
+        /// kiểm tra username tồn tại hay không để tạo tài khoản với tên này
+        /// </summary>
+        /// <param name="username">thử username</param>
+        /// <returns>true thì có rồi, ngược lại thì chưa có</returns>
         public bool CheckUsername(string username)
         {
             bool kq;

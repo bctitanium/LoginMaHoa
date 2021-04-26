@@ -10,6 +10,12 @@ namespace DAL
 {
     public class DALcontroller : DatabaseService
     {
+        /// <summary>
+        /// kiểm tra sự tồn tại của account
+        /// </summary>
+        /// <param name="username">tên tài khoản</param>
+        /// <param name="password">mật khẩu</param>
+        /// <returns>true thì có tài khoản này, ngược lại thì chưa có</returns>
         public bool CheckAccount(string username, string password)
         {
             bool kq;
